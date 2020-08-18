@@ -1,0 +1,792 @@
+/* ------------------------------------------------
+ Author: ArtStyles Brands (ArtTemplate / ArtIcons)
+ URL: http://themeforest.net/user/artstyles
+ 
+ Template Name: Oliver
+ version: 1.0.5
+------------------------------------------------ */
+/* -----------------------------------------------------------------
+    - General Styles
+----------------------------------------------------------------- */
+body {
+  background-image: url(../images/line-maker.svg);
+  background-color: #fff;
+  color: #111111;
+  font-weight: 500;
+}
+
+/* Input */
+input[type='text'], input[type='email'], input[type='password'], input[type='datetime'], input[type='date'], input[type='month'], input[type='time'], input[type='week'], input[type='search'], input[type='tel'], textarea,
+textarea.form-control {
+  background-color: #fff;
+  border: 1px solid #111111;
+  color: #111111;
+  font-weight: 400;
+}
+
+input[type='text']:focus, input[type='email']:focus, input[type='password']:focus, input[type='datetime']:focus, input[type='date']:focus, input[type='month']:focus, input[type='time']:focus, input[type='week']:focus, input[type='search']:focus, input[type='tel']:focus, textarea:focus,
+textarea.form-control:focus {
+  background-color: #fff;
+  border-color: #111111;
+  color: #111111;
+}
+
+.has-danger .form-control {
+  border-color: #736EFE;
+}
+.has-danger .form-control:focus {
+  border-color: #736EFE;
+}
+.has-danger .subscribe-form__inner .btn-subscribe {
+  border-left: 1px solid #736EFE;
+}
+
+.validation-success {
+  color: #111111;
+}
+
+.validation-danger {
+  color: #111111;
+}
+
+::placeholder,
+.form-control::placeholder {
+  color: #111111;
+}
+
+:-ms-input-placeholder,
+.form-control:-ms-input-placeholder {
+  color: #111111;
+}
+
+:focus::placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Buttons */
+.btn {
+  color: #111111;
+}
+.btn::before {
+  background-color: #736EFE;
+}
+.btn::after {
+  background-color: rgba(115, 110, 254, 0.5);
+}
+.btn:hover, .btn:focus {
+  color: #111111;
+}
+
+.btn-load__button {
+  background-color: transparent;
+  border: 1px solid #111111;
+}
+.btn-load__button::after, .btn-load__button::before {
+  background-color: #111111;
+}
+.btn-load__button:hover, .btn-load__button:focus {
+  background-color: #111111;
+}
+.btn-load__button:hover::after, .btn-load__button:hover::before, .btn-load__button:focus::after, .btn-load__button:focus::before {
+  background-color: #fff;
+}
+.btn-load__button .ripple::before, .btn-load__button .ripple::after {
+  background-color: #111111;
+}
+
+/* Link */
+.btn-link {
+  color: #111111;
+}
+.btn-link::after {
+  background-color: #111111;
+}
+
+/* -----------------------------------------------------------------
+    - Typography
+----------------------------------------------------------------- */
+.title_decoration::after {
+  background-color: #736EFE;
+}
+.title_light {
+  font-weight: 400;
+}
+.title_horizontal-line::before {
+  background-color: #111111;
+}
+.title_vertical-line-top::before, .title_vertical-line-bottom::before {
+  background-color: #111111;
+}
+
+.block-quote_center::before {
+  background-image: url(../images/icon-quote.svg);
+}
+
+a {
+  color: #111111;
+}
+a:hover, a:focus {
+  color: #111111;
+}
+a.link_decoration {
+  color: #111111;
+}
+a.link_decoration::after {
+  content: '';
+  background-color: #111111;
+}
+a.link_decoration:hover {
+  color: #111111;
+}
+
+::-moz-selection {
+  background: #736EFE;
+  color: #111111;
+}
+
+::selection {
+  background: #736EFE;
+  color: #111111;
+}
+
+/* -----------------------------------------------------------------
+    - Preloader
+----------------------------------------------------------------- */
+.loading {
+  background: #fff;
+  color: #111111;
+}
+.loading::before {
+  background: #736EFE;
+}
+.loading::after {
+  background: #736EFE;
+}
+
+/* -----------------------------------------------------------------
+    - Navbar
+----------------------------------------------------------------- */
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: #fff;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(17, 17, 17, 0.05);
+  }
+}
+.navbar.affix {
+  background-color: #fff;
+}
+.navbar-change .logotype__black {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .navbar-change .logotype__black {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar-change .logotype__white {
+    display: none;
+  }
+}
+.navbar-change .hamburger {
+  background-color: #fff;
+  box-shadow: 0 0 0 0px #fff;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .navbar-change .hamburger {
+    background-color: #111111;
+    box-shadow: 0 0 0 0px #111111;
+    color: #111111;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .navbar-change .hamburger {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.navbar-change .hamburger:hover {
+  box-shadow: 0 0 0 3px #fff;
+}
+@media screen and (max-width: 991px) {
+  .navbar-change .hamburger:hover {
+    box-shadow: 0 0 0 3px #111111;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .navbar-change .hamburger:hover {
+    box-shadow: none;
+  }
+}
+.navbar-change .hamburger__line {
+  background-color: #111111;
+}
+@media screen and (max-width: 991px) {
+  .navbar-change .hamburger__line {
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 580px) {
+  .navbar-change .hamburger__line {
+    background-color: #111111;
+  }
+}
+.navbar-change .navbar-nav .nav-item a {
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  .navbar-change .navbar-nav .nav-item a {
+    color: #111111;
+    font-weight: 500;
+  }
+}
+.navbar-change .navbar-nav .nav-item a:hover {
+  color: #fff;
+}
+.navbar-change.affix .logotype__black {
+  display: inline-block;
+}
+.navbar-change.affix .logotype__white {
+  display: none;
+}
+.navbar-change.affix .hamburger {
+  background-color: #111111;
+  box-shadow: 0 0 0 0px #111111;
+  color: #111111;
+}
+@media only screen and (max-width: 580px) {
+  .navbar-change.affix .hamburger {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.navbar-change.affix .hamburger:hover {
+  box-shadow: 0 0 0 3px #111111;
+}
+@media only screen and (max-width: 580px) {
+  .navbar-change.affix .hamburger:hover {
+    box-shadow: none;
+  }
+}
+.navbar-change.affix .hamburger__line {
+  background-color: #fff;
+}
+@media only screen and (max-width: 580px) {
+  .navbar-change.affix .hamburger__line {
+    background-color: #111111;
+  }
+}
+.navbar-change.affix .navbar-nav .nav-item a {
+  color: #111111;
+}
+.navbar-change.affix .navbar-nav .nav-item a:hover {
+  color: #111111;
+}
+
+.navbar-nav .nav-item a {
+  color: #111111;
+}
+@media only screen and (max-width: 991px) {
+  .navbar-nav .nav-item a {
+    border-top: 1px solid rgba(17, 17, 17, 0.1);
+  }
+}
+.navbar-nav .nav-item a:hover {
+  color: #111111;
+}
+.navbar-nav .dropdown-menu {
+  background-color: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .dropdown-menu::before {
+  border-bottom: 6px solid #fff;
+}
+.navbar-nav .dropdown-menu .nav-item a {
+  color: #111111;
+  transition: all 0.2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.navbar-nav .dropdown-menu .nav-item a:hover {
+  color: #fff !important;
+}
+
+.hamburger {
+  background-color: #111111;
+  box-shadow: 0 0 0 0px #111111;
+}
+@media only screen and (max-width: 580px) {
+  .hamburger {
+    background-color: transparent;
+  }
+}
+.hamburger:hover {
+  box-shadow: 0 0 0 3px #111111;
+}
+@media only screen and (max-width: 580px) {
+  .hamburger:hover {
+    box-shadow: none;
+  }
+}
+.hamburger__line {
+  background-color: #fff;
+}
+@media only screen and (max-width: 580px) {
+  .hamburger__line {
+    background-color: #111111;
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Hero
+----------------------------------------------------------------- */
+.hero {
+  color: #fff;
+}
+.hero::before {
+  content: '';
+  background: rgba(17, 17, 17, 0.3);
+}
+.hero__title_line::before {
+  border-top: 1px solid #fff;
+}
+.hero__description {
+  font-weight: 400;
+}
+.hero__btn {
+  color: #fff;
+}
+.hero__btn:hover {
+  color: #fff;
+}
+.hero .link_decoration {
+  color: #fff;
+  opacity: 1;
+}
+.hero .link_decoration:hover {
+  color: #fff;
+}
+.hero .link_decoration::after {
+  background-color: #fff;
+}
+.hero .next {
+  background-image: url(../images/next.svg);
+}
+.hero .next__arrow::after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #fff;
+}
+
+/* -----------------------------------------------------------------
+    - Sections
+----------------------------------------------------------------- */
+.section__quote::before {
+  background-image: url(../images/icon-quote.svg);
+}
+.section-bg {
+  color: #fff;
+}
+.section-bg::before {
+  background-color: rgba(17, 17, 17, 0.5);
+}
+.section-bg::after {
+  background-image: url(../images/line-maker-blak.svg);
+}
+.section-bg .link_decoration {
+  color: #fff;
+}
+.section-bg .link_decoration:hover {
+  color: #fff;
+}
+@media only screen and (max-width: 991px) {
+  .section-oneCarousel .swiper-control {
+    color: #fff;
+  }
+}
+
+.separation-top {
+  border-top: 1px solid rgba(192, 195, 200, 0.3);
+}
+
+.separation-bottom {
+  border-bottom: 1px solid rgba(192, 195, 200, 0.3);
+}
+
+/* -----------------------------------------------------------------
+    - Hello
+----------------------------------------------------------------- */
+.box-image {
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.2);
+}
+.box-image::after {
+  background-image: url(../images/decoration-dots-angle.svg);
+}
+.box-image::before {
+  background-image: url(../images/decoration-dots-box.svg);
+}
+
+.text-decoration {
+  color: #0f0f0f;
+  opacity: .03;
+}
+
+/* -----------------------------------------------------------------
+    - Gallery
+----------------------------------------------------------------- */
+.grid-gallery .item-portfolio {
+  background-color: #fff;
+}
+.grid-gallery .item-portfolio::before {
+  background-color: rgba(17, 17, 17, 0.5);
+}
+.grid-gallery .item-portfolio .item-details {
+  color: #fff;
+}
+.grid-gallery .item-portfolio .item-details a {
+  color: #fff;
+}
+.grid-gallery .image-portfolio {
+  cursor: url(../images/zoom_cursor.svg) 30 30, pointer;
+}
+
+/* Custom viewer */
+.pswp__ui--fit .pswp__top-bar {
+  background-color: #fff;
+}
+
+.pswp__bg {
+  background-color: #fff;
+}
+
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before {
+  background-color: #fff;
+}
+
+.pswp__caption {
+  background-color: transparent !important;
+}
+.pswp__caption::before {
+  background-image: url(../images/icon-info.svg);
+}
+.pswp__caption .pswp__caption__center {
+  background-color: #fff;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.2);
+  color: #111111;
+}
+
+@media only screen and (min-width: 769px) {
+  .filter__link {
+    color: #111111;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .select {
+    border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+    color: #111111;
+  }
+  .select .placeholder {
+    background-color: #fff;
+  }
+}
+/* -----------------------------------------------------------------
+    - Testimonials
+----------------------------------------------------------------- */
+@media only screen and (max-width: 580px) {
+  .client-carousel-item {
+    background-color: transparent;
+  }
+}
+.client-carousel-item .item__block-author {
+  background-color: #f2f4f6;
+}
+.client-carousel-item .item__block-author::after {
+  background-color: #e3e5e8;
+}
+.client-carousel-item .item__block-image {
+  background-color: #fff;
+}
+.client-carousel-item .item__block-name .cleint__organization {
+  opacity: 1;
+}
+.client-carousel-item .item__block-description::after {
+  background-color: #111111;
+}
+.client-carousel-item .item__block-number::after {
+  background-color: #736EFE;
+}
+
+/* -----------------------------------------------------------------
+    - Photo Carousel
+----------------------------------------------------------------- */
+.photo-carousel__item {
+  background-color: #1a1a1a;
+}
+.photo-carousel__item .item__block-description .title {
+  text-shadow: 0 8px 30px rgba(17, 17, 17, 0.3);
+}
+@media only screen and (max-width: 991px) {
+  .photo-carousel__item .item__block-description .title {
+    color: #fff;
+  }
+}
+.photo-carousel__item .item__block-description .title::after {
+  background-color: #736EFE;
+}
+
+.swiper-control .swiper-button-prev::after,
+.swiper-control .swiper-button-next::after {
+  background-color: #111111;
+}
+
+/* -----------------------------------------------------------------
+    - Pricing
+----------------------------------------------------------------- */
+.pricing-grid__item {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+.pricing-grid__item::before {
+  background-color: #111111;
+  opacity: .0;
+}
+.pricing-grid__item::after {
+  background-color: #736EFE;
+}
+.pricing-grid__item .btn-link {
+  color: #fff;
+}
+.pricing-grid__item .btn-link::after {
+  background-color: #fff;
+}
+.pricing-grid__item .title__h4::after {
+  background-color: #fff;
+}
+
+/* -----------------------------------------------------------------
+    - Newsletter  
+----------------------------------------------------------------- */
+.subscribe-form__inner .btn-subscribe {
+  background-color: transparent;
+  border-left: 1px solid #111111;
+  color: #111111;
+}
+
+/* -----------------------------------------------------------------
+    - Section History
+----------------------------------------------------------------- */
+.col-about__describe .block-description {
+  font-weight: 400;
+}
+.col-about__describe .block-description::before {
+  background-color: #111111;
+}
+
+.block-image::before {
+  background-image: url(../images/decoration-dots-box.svg);
+}
+.block-image__number {
+  color: #736EFE;
+}
+
+.list-info {
+  color: #1a1a1a;
+}
+.list-info strong {
+  color: #111111;
+}
+
+/* -----------------------------------------------------------------
+    - Blog
+----------------------------------------------------------------- */
+.item-news__paragraph {
+  font-weight: 400;
+}
+.item-news__paragraph_line::before {
+  background-color: #111111;
+}
+.item-news__paragraph table {
+  border-bottom: 1px solid #ededed;
+}
+.item-news__paragraph td {
+  border-top: 1px solid #ededed;
+}
+.item-news__masonry:hover .media-content {
+  box-shadow: inset 0 0 0 20px #fff;
+}
+.item-news__masonry .media-content {
+  box-shadow: inset 0 0 0 0px #fff;
+}
+.item-news__masonry .item-news__header::before {
+  background-color: #111111;
+}
+.item-news__masonry .title a:hover {
+  color: #c0c3c8;
+}
+
+/* Singel Post */
+.news-singel .item-news .share-post::before {
+  background-color: #111111;
+}
+.news-singel .item-news .share-post a:hover {
+  color: #736EFE;
+}
+
+/* Nav */
+.pager-wrap .pager li.previous a::after, .pager-wrap .pager li.next a::after {
+  background-color: #111111;
+}
+.pager-wrap .pager li a {
+  opacity: 1;
+}
+.pager-wrap .pager .disabled a:hover, .pager-wrap .pager .disabled a:focus {
+  background-color: transparent;
+  color: #c0c3c8;
+}
+.pager-wrap .pager .back_grid {
+  fill: #111111;
+}
+.pager-wrap .pager .back_grid:hover {
+  fill: #c0c3c8;
+}
+
+/* Filters */
+.filter-categories {
+  font-weight: 500;
+}
+.filter-categories__item_current a {
+  color: #736EFE;
+  opacity: 1;
+}
+.filter-categories__item_current a::before {
+  background-color: #736EFE;
+}
+
+/* -----------------------------------------------------------------
+    - Cooments
+----------------------------------------------------------------- */
+.section-comments .media .media-header .data-comment {
+  opacity: .8;
+}
+.section-comments .media .media-header a:hover {
+  color: #736EFE;
+}
+.section-comments .media .media-body .media-footer .reply:hover {
+  color: #736EFE;
+}
+
+/* -----------------------------------------------------------------
+    - Contact
+----------------------------------------------------------------- */
+.section-contact .text-block {
+  font-weight: 400;
+}
+
+.map-block {
+  background-color: #fff;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+  color: #fff;
+}
+
+/* PopUp */
+.popup {
+  background: #fff;
+}
+.popup__btn-close {
+  background-color: transparent;
+  color: #111111;
+}
+.show-popup .popup.popup-overlay::before, .show-overlay-nav .popup.popup__menu::before {
+  background-color: #fff;
+}
+.show-popup .popup.popup-overlay::after, .show-overlay-nav .popup.popup__menu::after {
+  background-color: #736EFE;
+}
+
+/* -----------------------------------------------------------------
+    - Page error
+----------------------------------------------------------------- */
+.mask-404::before {
+  background-image: url(../images/404-mask.svg);
+}
+
+.element-404 {
+  background-image: url(../images/404.svg);
+}
+
+/* -----------------------------------------------------------------
+    - Footer
+----------------------------------------------------------------- */
+.footer::before {
+  background-color: #111111;
+}
+
+/* -----------------------------------------------------------------
+    - Zoom Image
+----------------------------------------------------------------- */
+.medium-zoom-overlay {
+  background: #fff !important;
+}
+
+/* -----------------------------------------------------------------
+    - Video
+----------------------------------------------------------------- */
+.video-hero {
+  background-color: #0f0f0f;
+}
+
+.video-controls [data-media="play-pause"] {
+  color: #111111;
+  box-shadow: 0 0 0 0px #fff;
+}
+.video-controls [data-media="play-pause"]:hover {
+  background-color: #736EFE;
+  color: #fff;
+  box-shadow: 0 0 0 10px #736EFE;
+}
+
+[data-media] {
+  background-color: #fff;
+}
+
+[data-media="mute-unmute"] {
+  background-image: url(../images/sound-on.svg);
+  background-color: transparent;
+}
+.muted [data-media="mute-unmute"] {
+  background-image: url(../images/sound-off.svg);
+}
+
+/* -----------------------------------------------------------------
+    - Effects
+----------------------------------------------------------------- */
+.reveal.animated::before,
+.swiper-slide-active .item__block-image::before {
+  background: #fff;
+}
+.reveal.animated::after,
+.swiper-slide-active .item__block-image::after {
+  background: #736EFE;
+}
+
+.reveal_gray.animated::before {
+  background: #fff;
+}
+
+/*# sourceMappingURL=style-light.css.map */
